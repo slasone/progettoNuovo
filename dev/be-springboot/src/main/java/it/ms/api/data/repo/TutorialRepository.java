@@ -4,13 +4,10 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import it.ms.api.data.entity.Tutorial;
+import it.ms.api.data.entity.Users;
 
 
-public interface TutorialRepository extends JpaRepository<Tutorial, Long> {
+public interface TutorialRepository extends JpaRepository<Users, Long> {
 
-  List<Tutorial> findByPublished(boolean published);
-
-  List<Tutorial> findByTitleContaining(String title);
-  
+  //List<users> findUsers(String )
 }
