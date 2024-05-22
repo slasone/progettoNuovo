@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import it.ms.api.data.entity.Users;
 
 
-public interface TutorialRepository extends JpaRepository<Users, Long> {
+public interface UserRepository extends JpaRepository<Users, Long> {
 
-  //List<users> findUsers(String )
+  public List<Users> findUsersByNome(String nome);
 }
